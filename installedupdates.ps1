@@ -1,4 +1,9 @@
-﻿##Scripts prompt for computer name and runs scan on patches installed on selected date##
+<#
+.SYNOPSIS
+    Script to check what KB's where installed on a provided machine
+.DESCRIPTION
+    Uses VB to create interactive windows prompts for computer name and two dates to create a range
+#>
 Do {
 ##SUB VB Object to prompt for computer name##
 [System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
